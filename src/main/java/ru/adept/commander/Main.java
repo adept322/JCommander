@@ -14,7 +14,7 @@ public class Main extends Application {
         // Запуск начального окна с параметрами
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/main.fxml")));
         primaryStage.setTitle("JCommander");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.setScene(new Scene(root, 1200, 600));
         primaryStage.show();
     }
 

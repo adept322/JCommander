@@ -60,7 +60,7 @@ public class FileInformation {
                 this.size = -1L;
             }
 
-            this.lastModified = LocalDateTime.ofInstant(Files.getLastModifiedTime(path).toInstant(), ZoneOffset.ofHours(0));
+            this.lastModified = LocalDateTime.ofInstant(Files.getLastModifiedTime(path).toInstant(), ZoneOffset.ofHours(3));
         } catch (IOException e) {
             throw new RuntimeException("Не удалось создать экземпляр FileInformation по пути:" + path.toString());
         }
